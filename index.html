@@ -3,11 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=
-    , initial-scale=1.0"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>WebStudio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,7 +19,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
   </head>
   <body>
     <!-- Header -->
@@ -35,7 +32,7 @@
               <a class="current-studio header-link-menu link" href="index.html"> Studio</a>
             </li>
             <li>
-              <a class="header-link link" href="portfolio.html"> Portfolio</a>
+              <a class="header-link link" href=""> Portfolio</a>
             </li>
             <li>
               <a class="header-link link" href="index.html"> Contacts</a>
@@ -456,8 +453,8 @@
     <footer class="footer-info">
       <div class="footer-div container">
         <div class="footer-logo-text">
-          <a class="footer-logo" href="index.html"
-            >Web<span class="footer-link-logo-studio">Studio</span></a
+          <a class="footer-logo link" href="./index.html"
+            >Web<span class="footer-link-logo-studio link">Studio</span></a
           >
           <p class="footer-text">
             Increase the flow of customers and sales for your business with digital marketing &
@@ -467,51 +464,53 @@
         <!-- Social Links -->
         <div class="footer-social-media">
           <p class="social-media-link">Social media</p>
-          <ul class="footer-link-list">
+          <ul class="footer-link-list list">
             <li class="social-link">
               <a class="social-link-icon" href="index.html">
-                <svg class="team-social-icon" width="24" height="24">
+                <svg class="footer-social-media" width="24" height="24">
                   <use href="./images/icons.svg#icon-instagram-2"></use>
                 </svg>
               </a>
             </li>
             <li class="social-link">
               <a class="social-link-icon" href="index.html">
-                <svg class="team-social-icon" width="24" height="24">
+                <svg class="footer-social-media" width="24" height="24">
                   <use href="./images/icons.svg#icon-twitter-1"></use>
                 </svg>
               </a>
             </li>
             <li class="social-link">
               <a class="social-link-icon" href="index.html">
-                <svg class="team-social-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-facebook-1"></use>
+                <svg class="footer-social-media" width="24" height="24">
+                  <use href="/images/icons.svg#icon-facebook-1"></use>
                 </svg>
               </a>
             </li>
             <li class="social-link">
               <a class="social-link-icon" href="index.html">
-                <svg class="team-social-icon" width="24" height="24">
+                <svg class="footer-social-media" width="24" height="24">
                   <use href="./images/icons.svg#icon-linkedin-1"></use>
                 </svg>
               </a>
             </li>
           </ul>
         </div>
+
         <!-- Footer-input -->
+
         <div class="footer-bottom">
           <p class="footer-input-title">Subscribe</p>
           <form class="footer-form">
-            <label aria-label="footer email input" class="footer-input-label">
+            <label class="footer-input-label">
               <input type="email" name="footer-mail" class="footer-input" placeholder="E-mail" />
             </label>
+            <button type="submit" class="btn-input-footer">
+              Subscribe
+              <svg class="footer-btn-input" width="24" height="24">
+                <use href="./images/icons.svg#icon-Frame-3"></use>
+              </svg>
+            </button>
           </form>
-          <button type="submit" class="btn-input-footer">
-            Subscribe
-            <svg class="footer-btn-input" width="24" height="24">
-              <use href="./images/icons.svg#icon-Frame-3"></use>
-            </svg>
-          </button>
         </div>
       </div>
     </footer>
