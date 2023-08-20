@@ -1228,7 +1228,6 @@ address .list {
   }
 }
 
-/* Subscribe */
 
 .footer-form {
   position: relative;
@@ -1386,6 +1385,124 @@ address .list {
   }
 
 
+}
+
+/* Portfolio */
+.portfolio-list {
+  padding: 96px 0 120px 0;
+}
+
+.portfolio-list .container .list-btn {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 72px;
+}
+
+.btn-portfolio {
+  font-family: "Roboto", sans-serif;
+  color: var(--iris);
+  text-align: center;
+  font-size: 16px;
+  font-weight: var(--weight500);
+  line-height: 1.5;
+  letter-spacing: 0.64px;
+  background: var(--cloud);
+  cursor: pointer;
+  padding: 12px 24px;
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-portfolio:hover,
+.btn-portfolio:focus {
+  color: #ffffff;
+  background: var(--ocean);
+  border: 1px solid transparent;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+    0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-list .container .projects {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  row-gap: 48px;
+  column-gap: 24px;
+  text-align: left;
+  background: var(--white, #fff);
+}
+
+.container-name {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+}
+
+.portfolio-list .header-link {
+  display: block;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.projects-list {
+  background: var(--white, #fff);
+  width: calc((100% - 48px) / 3);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-list .header-link {
+  padding: 0;
+}
+
+.portfolio-list .header-link:focus,
+.portfolio-list .header-link:hover {
+  box-shadow:
+    0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+
+.header-link:focus .cover-text {
+  transform: translateY(0%);
+}
+
+.page-link:hover .cover-text {
+  transform: translateY(0%);
+}
+
+.page-link {
+  display: block;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.page-link:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.page-link:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.page-link:focus .cover-text {
+  transform: translateY(0%);
+}
+
+.title-make-portfolio {
+  color: var(--navyblue);
+  font-size: 20px;
+  font-weight: var(--weight500);
+  line-height: 1.2;
+  letter-spacing: 0.4px;
+  text-transform: capitalize;
+  margin-bottom: 8px;
 }
 
 .wrap-text {
