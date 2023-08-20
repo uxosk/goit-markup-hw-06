@@ -693,22 +693,24 @@ address .list {
 }
 
 .section-team .container {
-  max-width: 1440px;
-  width: 1158px;
+  /*max-width: 1440px;
+  width: 1158px;*/
   flex-shrink: 0;
   text-align: center;
+  flex-direction: column;
 }
 
-.section-team .list {
+/* .section-team .list {
   display: flex;
   gap: 24px;
-}
+} */
+
 
 .title-team {
   color: var(--navyblue);
   font-size: 36px;
   line-height: 1.11;
-  text-align: center;
+  text-align: left;
   letter-spacing: 0.72px;
   text-transform: capitalize;
   margin-bottom: 72px;
@@ -754,9 +756,11 @@ address .list {
 .social-team-list {
   display: flex;
   gap: 24px;
-  margin-top: 8px;
+
   justify-content: center;
 }
+
+
 
 .social-link-icon {
   width: 40px;
