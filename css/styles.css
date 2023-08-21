@@ -44,7 +44,7 @@ img {
 }
 
 .container {
-  min-width: 428px;
+
   max-width: 1158px;
   margin: 0 auto;
   padding: 0 15px;
@@ -360,7 +360,7 @@ address .list {
   margin-top: 100%;
 }
 
-.mobile-menu {
+.mobile-menu-contacts {
   display: flex;
   flex-direction: column;
 }
@@ -491,11 +491,12 @@ address .list {
 .section-solution {
   background-color: var(--navyblue);
   max-width: 1158px;
+  height: 432px;
   display: flex;
   flex-shrink: 0;
   text-align: center;
   justify-content: center;
-  padding: 188px 0;
+  padding: 112px 0;
   background-image: linear-gradient(rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)),
     url(../images/hero-bg.jpg);
@@ -593,7 +594,7 @@ address .list {
   letter-spacing: 0.72px;
   text-transform: capitalize;
   margin: 0 auto;
-  width: 320px;
+  max-width: 320px;
 
 }
 
@@ -633,13 +634,16 @@ address .list {
 .section-benefits .list {
   gap: 24px;
   /* margin: 0; */
+
 }
 
-
+.section-benefits-list:not(:last-child) {
+  margin-bottom: 72px;
+}
 
 .section-benefits-list {
   flex-basis: calc((100% - 3 * 24px) / 4);
-  margin-bottom: 72px;
+
 }
 
 
@@ -674,7 +678,7 @@ address .list {
   line-height: 40px;
   letter-spacing: 0.72px;
   text-transform: capitalize;
-  margin-top: 96px;
+  margin-bottom: 8px;
 }
 
 .text-features {
@@ -791,7 +795,7 @@ address .list {
 }
 
 .section-team {
-  padding: 120px 0;
+  padding: 96px 0;
   background-color: var(--cloud);
 }
 
@@ -832,8 +836,98 @@ address .list {
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+
+}
+
+.section-team-list:not(:last-child) {
   margin-bottom: 72px;
 }
+
+/*  Mobile Team img*/
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+  .section-solution {
+    background-image: linear-gradient (rgba(17, 17, 17 0.4),
+        rgba(17, 17, 17 0.4)),
+      url(/images/Team/mob-camila1x.jpg);
+  }
+}
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+  .section-solution {
+    background-image: linear-gradient (rgba(17, 17, 17 0.4),
+        rgba(17, 17, 17 0.4)),
+      url(/images/Team/mob-camila2x.jpg);
+  }
+}
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+  .section-solution {
+    background-image: linear-gradient (rgba(17, 17, 17 0.4),
+        rgba(17, 17, 17 0.4)),
+      url(/images/Team/mob-daniel1x.jpg);
+  }
+}
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+  .section-solution {
+    background-image: linear-gradient (rgba(17, 17, 17 0.4),
+        rgba(17, 17, 17 0.4)),
+      url(/images/Team/mob-daniel2x.jpg);
+  }
+}
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+  .section-solution {
+    background-image: linear-gradient (rgba(17, 17, 17 0.4),
+        rgba(17, 17, 17 0.4)),
+      url(/images/Team/mob-tom1x.jpg);
+  }
+}
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+  .section-solution {
+    background-image: linear-gradient (rgba(17, 17, 17 0.4),
+        rgba(17, 17, 17 0.4)),
+      url(/images/Team/mob-tom2x.jpg);
+  }
+}
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+  .section-solution {
+    background-image: linear-gradient (rgba(17, 17, 17 0.4),
+        rgba(17, 17, 17 0.4)),
+      url(/images/Team/mob-mark1x.jpg);
+  }
+}
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+  .section-solution {
+    background-image: linear-gradient (rgba(17, 17, 17 0.4),
+        rgba(17, 17, 17 0.4)),
+      url(/images/Team/mob-mark1x.jpg);
+  }
+}
+
+
+
+
+
 
 .team-list-card {
   padding: 32px 0;
@@ -912,7 +1006,7 @@ address .list {
 }
 
 .section-customers {
-  padding: 120px 0;
+  padding-top: 96px;
   background-color: var(--white);
 }
 
@@ -928,9 +1022,9 @@ address .list {
 
 .section-customers .list {
   display: flex;
-  gap: 24px;
+  gap: 72px 16px;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .customers-icon-list {
@@ -939,7 +1033,7 @@ address .list {
   align-items: center;
   flex-basis: calc((100% - 120px) / 6); */
   flex-basis: calc((100% - 24px) / 2);
-  margin-bottom: 72px;
+
 }
 
 .customers-icon-link {
@@ -954,6 +1048,10 @@ address .list {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+
+
+
 
 .customer-icon {
   fill: currentColor;
@@ -1149,6 +1247,7 @@ address .list {
   background: var(--navyblue);
   padding-top: 100px;
   padding-bottom: 100px;
+  margin-top: 96px;
 }
 
 .footer-text {
@@ -1231,7 +1330,7 @@ address .list {
 
 .footer-form {
   position: relative;
-  display: flex;
+
   gap: 24px;
   flex-direction: column;
   align-items: center;
@@ -1318,7 +1417,12 @@ address .list {
 
 
 
-
+.btn-div-footer {
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 .btn-input-footer {
   display: flex;
@@ -1340,6 +1444,7 @@ address .list {
   min-width: 165px;
   cursor: pointer;
   position: relative;
+  margin: 0 auto;
 }
 
 
