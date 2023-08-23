@@ -45,9 +45,27 @@ img {
 
 .container {
 
-  max-width: 1158px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+@media screen and (min-width:428px) {
+  .container {
+    width: 428px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width:1158px) {
+  .container {
+    width: 1158px;
+  }
+
 }
 
 .link {
@@ -269,9 +287,21 @@ address .list {
 
 .menu-close-btn {
   border: none;
-  display: block;
+  display: flex;
   margin-left: auto;
-  
+
+  border-radius: 50%;
+  background-color: var(--accent);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+
+
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+
+
 }
 
 .btn-svg-open {
@@ -290,7 +320,8 @@ address .list {
   display: flex;
   flex-direction: column;
   min-width: 320px;
-  padding: 80px 35px 40px 40px;
+
+  padding: 24px 24px 40px 40px;
 }
 
 .mob-menu {
@@ -311,7 +342,8 @@ address .list {
   outline: 2px solid tomato;
   outline-offset: -2px;
 }
-.mob-menu.is-open{
+
+.mob-menu.is-open {
   transform: translateX(0);
 }
 
@@ -321,8 +353,10 @@ address .list {
 
 
 .mob-studio-link {
-  color: var(--navyblue, #2E2F42);
+  color: var(--ocean, #404BBF);
+  font-family: Roboto;
   font-size: 36px;
+  font-style: normal;
   font-weight: 700;
   line-height: 40px;
   letter-spacing: 0.72px;
@@ -406,9 +440,15 @@ address .list {
 
 .mob-social-team-list {
   display: flex;
-  gap: 56px;
-  margin-bottom: 40px;
+  gap: 25px;
+  margin-top: 48px;
   justify-content: center;
+}
+
+@media screen and (min-width: 340px) and (max-width: 428px) {
+  .mob-social-team-list {
+    gap: 56px
+  }
 }
 
 @media screen and (min-width:768px) {
@@ -514,9 +554,9 @@ address .list {
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
   .section-solution {
-    background-image: linear-gradient (rgba(17, 17, 17 0.4),
-        rgba(17, 17, 17 0.4)),
-      url(/images/hero/Dark-bg-mobile1x.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)),
+      url(../images/hero/Dark-bg-mobile1x.jpg);
   }
 }
 
@@ -524,9 +564,9 @@ address .list {
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
   .section-solution {
-    background-image: linear-gradient (rgba(17, 17, 17 0.4),
-        rgba(17, 17, 17 0.4)),
-      url(/images/hero/Dark-bg-mobile2x.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)),
+      url(../images/hero/Dark-bg-mobile2x.jpg);
   }
 }
 
@@ -537,9 +577,9 @@ address .list {
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
     .section-solution {
-      background-image: linear-gradient (rgba(17, 17, 17 0.4),
-          rgba(17, 17, 17 0.4)),
-        url(/images/hero/Dark-bg-tablet1x.jpg);
+      background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)),
+        url(../images/hero/Dark-bg-tablet1x.jpg);
     }
   }
 
@@ -547,9 +587,9 @@ address .list {
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
     .section-solution {
-      background-image: linear-gradient (rgba(17, 17, 17 0.4),
-          rgba(17, 17, 17 0.4)),
-        url(/images/hero/Dark-bg-tablet2x.jpg);
+      background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)),
+        url(../images/hero/Dark-bg-tablet2x.jpg);
     }
   }
 }
@@ -561,9 +601,9 @@ address .list {
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
     .section-solution {
-      background-image: linear-gradient (rgba(17, 17, 17 0.4),
-          rgba(17, 17, 17 0.4)),
-        url(/images/hero/people-office-desktop1x.jpg);
+      background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)),
+        url(../images/hero/people-office-desktop1x.jpg);
     }
   }
 
@@ -571,9 +611,9 @@ address .list {
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
     .section-solution {
-      background-image: linear-gradient (rgba(17, 17, 17 0.4),
-          rgba(17, 17, 17 0.4)),
-        url(/images/hero/people-office-desktop2x.jpg);
+      background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)),
+        url(../images/hero/people-office-desktop2x.jpg);
     }
   }
 }
